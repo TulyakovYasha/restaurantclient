@@ -1,0 +1,18 @@
+spring:
+  main:
+    banner-mode: 'OFF'
+  application:
+    name: meals-client-application
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8089
+feign:
+  hystrix:
+    enabled: true
+logging:
+  config: config/log4j2.xml
